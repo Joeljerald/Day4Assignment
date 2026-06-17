@@ -1,6 +1,6 @@
-import SchoolCart from "../components/SchoolCart";
-import Schools from "../components/Schools";
-import SchoolStats from "../components/SchoolStats";
+import SchoolCart from "../day4/components/SchoolCart";
+import Schools from "../day4/components/Schools";
+import SchoolStats from "../day4/components/SchoolStats";
 const schools = [
 
   {
