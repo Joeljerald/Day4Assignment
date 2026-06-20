@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 const NavBar = () => {
   return (
     <div className="flex justify-between bg-violet-800 h-20">
-        <div className="flex w-30 h-19">
+        <div className="flex w-30 h-20">
             <img src="./SLALogo.webp" className="rounded-4xl"/>
         </div>
         <div className="text-center py-5 ">
