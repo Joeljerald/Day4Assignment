@@ -18,6 +18,7 @@ import ObjectArray from "../day7/pages/ObjectArray"
 import ArrayOfObject from "../day7/pages/ArrayOfObject"
 import Array from "../day7/pages/Array"
 import Layouts from "../day7/components/Layouts"
+import Day8 from "../pages/Day8"
 
 
 const AppRoute = () => {
@@ -38,6 +39,7 @@ const AppRoute = () => {
             <Route path="/day4" element={<Day4/>}/>
             <Route path="/day5" element={<Day5/>}/>
             <Route path="/day6" element={<Day6/>}/>
+            <Route path="/day8" element={<Day8/>}/>
           </Route>
           <Route path="/" element={<Layouts/>}>
              <Route path="/obj" element={<ObjectArray/>}/>
