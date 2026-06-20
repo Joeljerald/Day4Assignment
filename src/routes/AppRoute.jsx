@@ -13,6 +13,12 @@ import Login from "../day2/pages/Login";
 import Layout from "../day2/components/Layout";
 import Register from "../day2/pages/Register";
 import Day6 from "../pages/Day6"
+import Day7 from "../pages/Day7"
+import ObjectArray from "../day7/pages/ObjectArray"
+import ArrayOfObject from "../day7/pages/ArrayOfObject"
+import Array from "../day7/pages/Array"
+import Layouts from "../day7/components/Layouts"
+
 
 const AppRoute = () => {
   return (
@@ -24,17 +30,25 @@ const AppRoute = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+
+         
+           
            <Route path="/day1" element={<Day1/>}/>
-            
             <Route path="/day3" element={<Day3/>}/>
             <Route path="/day4" element={<Day4/>}/>
             <Route path="/day5" element={<Day5/>}/>
             <Route path="/day6" element={<Day6/>}/>
           </Route>
+          <Route path="/" element={<Layouts/>}>
+             <Route path="/obj" element={<ObjectArray/>}/>
+          <Route path="/array" element={<Array/>}/>
+          <Route path="/arrofobj" element={<ArrayOfObject/>}/>
+          </Route>
            
             <Route path="/login" element={<Login />} />
             <Route path="/day2" element={<Day2/>}/>
             <Route path="/register" element={<Register/>}/>
+            <Route path="/day7" element={<Day7/>}/>
             
         </Routes>
     </div>

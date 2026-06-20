@@ -34,7 +34,12 @@ const Home = () => {
 
         <Link to="/day6" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
           <h2 className="text-3xl font-bold text-pink-400 mb-4">Day 6</h2>
-          <p className="text-purple-500">Day 6 - Hooks - UseState WIth rendering Methods</p>
+          <p className="text-gray-500">Day 6 - Hooks - UseState WIth rendering Methods</p>
+        </Link>
+
+         <Link to="/day7" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+          <h2 className="text-3xl font-bold text-rose-800 mb-4">Day 7</h2>
+          <p className="text-gray-500">Day 6 - Batch update - Rendering Methods </p>
         </Link>
       </div>
     </div>
