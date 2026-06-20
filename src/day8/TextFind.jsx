@@ -27,7 +27,7 @@ const TextFind = () => {
           <input type="text" value={text} placeholder="Type something..." onChange={(e) => setText(e.target.value)} className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
         </div>
 
-        <button onClick={handleAdd} className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">Add Text</button>
+        <button onClick={handleAdd} className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 ">Add Text</button>
       </div>
 
       <div className="mt-8">
@@ -42,7 +42,7 @@ const TextFind = () => {
             </div>
           ))
         )}
-      </div>
+      </div> 
     </div>
   );
 };

@@ -17,6 +17,7 @@ const ListCreatorForm = () => {
 
   return (
     <div className="border-2 mx-80 my-8 bg-white p-6 rounded-2xl shadow-lg">
+      <h1 className="text-2xl font-bold text-center text-indigo-600">List Handling</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block font-medium text-gray-700 mb-2">User List Creator</label>
