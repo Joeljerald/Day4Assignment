@@ -3,7 +3,7 @@ const NavBar = () => {
   return (
     <div className="flex justify-between bg-violet-800 h-20">
         <div className="flex w-30 h-20">
-            <img src="./SLALogo.webp" className="rounded-4xl"/>
+            <img src="./react.svg" className="rounded-4xl"/>
         </div>
         <div className="text-center py-5 ">
             <h1 className="font-bold text-4xl text-center text-white">React useState Operations Dashboard</h1>
