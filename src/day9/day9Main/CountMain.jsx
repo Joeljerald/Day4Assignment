@@ -1,4 +1,4 @@
-import Counted from "../components/counted";
+import Counted from "../components/Counted";
 import withCount from "../hoc/withCount";
 
 const EnhancedCount = withCount(Counted);

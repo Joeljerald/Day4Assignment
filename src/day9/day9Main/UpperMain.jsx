@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Text from "../components/text";
+import Text from "../components/Text";
 import withUpperCase from "../hoc/withUpperCase";
 
 const EnhancedText = withUpperCase(Text);
