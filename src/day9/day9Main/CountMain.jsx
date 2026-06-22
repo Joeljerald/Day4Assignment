@@ -1,7 +1,7 @@
-import Count from "../components/count";
+import Counted from "../components/counted";
 import withCount from "../hoc/withCount";
 
-const EnhancedCount = withCount(Count);
+const EnhancedCount = withCount(Counted);
 
 const CountMain = () => {
   return (
