@@ -39,18 +39,18 @@ const Home = () => {
 
          <Link to="/day7" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
           <h2 className="text-3xl font-bold text-rose-800 mb-4">Day 7</h2>
-          <p className="text-gray-500">Day 6 - Batch update - Rendering Methods </p>
+          <p className="text-gray-500">Day 7 - Batch update - Rendering Methods HOAM</p>
         </Link>
 
 
         <Link to="/day8" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
           <h2 className="text-3xl font-bold text-rose-800 mb-4">Day 8</h2>
-          <p className="text-gray-500">Day 6 - Batch update - Rendering Methods </p>
+          <p className="text-gray-500">Day 8 - React UseState Hooks - with Form Handling </p>
         </Link>
 
         <Link to="/day9" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
           <h2 className="text-3xl font-bold text-rose-800 mb-4">Day 9</h2>
-          <p className="text-gray-500">Day 6 - Batch update - Rendering Methods </p>
+          <p className="text-gray-500">Day 8 - Higher Order Component (HOC), code reuse patterns </p>
         </Link>
       </div>
     </div>
