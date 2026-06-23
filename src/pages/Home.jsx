@@ -44,13 +44,18 @@ const Home = () => {
 
 
         <Link to="/day8" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
-          <h2 className="text-3xl font-bold text-rose-800 mb-4">Day 8</h2>
+          <h2 className="text-3xl font-bold text-fuchsia-800 mb-4">Day 8</h2>
           <p className="text-gray-500">Day 8 - React UseState Hooks - with Form Handling </p>
         </Link>
 
         <Link to="/day9" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
-          <h2 className="text-3xl font-bold text-rose-800 mb-4">Day 9</h2>
-          <p className="text-gray-500">Day 8 - Higher Order Component (HOC), code reuse patterns </p>
+          <h2 className="text-3xl font-bold text-cyan-900 mb-4">Day 9</h2>
+          <p className="text-gray-500">Day 9 - Higher Order Component (HOC), code reuse patterns </p>
+        </Link>
+
+        <Link to="/day10" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+          <h2 className="text-3xl font-bold text-lime-600 mb-4">Day 10</h2>
+          <p className="text-gray-500">Day 10 - useState w/ arrays, immutable update, add/remove, state patterns </p>
         </Link>
       </div>
     </div>
