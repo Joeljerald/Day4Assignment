@@ -40,7 +40,7 @@ const UserData = () => {
                 </tr>
 
               <tr>
-                <td className="w-56 text-xl font-semibold pr-6 whitespace-nowrap">
+                <td className=" text-xl font-semibold pr-6 ">
                   <label htmlFor="UserName">Enter a Name </label>
                   </td>
                 <td>
@@ -49,7 +49,7 @@ const UserData = () => {
               </tr>
 
               <tr>
-                <td className="w-56 text-xl font-semibold pr-6 whitespace-nowrap">
+                <td className="text-xl font-semibold pr-6 ">
                   <label htmlFor="UserAge">Enter a Age</label></td>
 
                 <td>
@@ -58,7 +58,7 @@ const UserData = () => {
               </tr>
 
               <tr>
-                <td className="w-56 text-xl font-semibold pr-6 whitespace-nowrap">
+                <td className="text-xl font-semibold pr-6">
                   <label htmlFor="UserCity">Enter a City</label>
                 </td>
 
