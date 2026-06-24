@@ -5,6 +5,7 @@ const UserData = () => {
   const [userData, setUserData] = useState({UserName: "",UserAge: "",UserCity: "",});
   const [arrData, setArrData] = useState([]);
   const handleClick = (e) => {
+    
     setUserData({
       ...userData,
       [e.target.name]: e.target.value,
@@ -53,7 +54,7 @@ const UserData = () => {
                   <label htmlFor="UserAge">Enter a Age</label></td>
 
                 <td>
-                  <input type="number" id="UserAge" name="UserAge" value={userData.UserAge} onChange={handleClick} placeholder="Enter your Age" className="w-80 border-2 border-gray-300 rounded-xl p-3 text-lg focus:outline-none focus:border-indigo-500"/>
+                  <input type="number" id="UserAge" min="1" name="UserAge" value={userData.UserAge} onChange={handleClick} placeholder="Enter your Age" className="w-80 border-2 border-gray-300 rounded-xl p-3 text-lg focus:outline-none focus:border-indigo-500"/>
                 </td>
               </tr>
 

@@ -21,6 +21,7 @@ import Layouts from "../day7/components/Layouts"
 import Day8 from "../pages/Day8"
 import Day9 from "../pages/Day9"
 import Day10 from "../pages/Day10"
+import Day11 from "../pages/Day11"
 
 
 const AppRoute = () => {
@@ -44,6 +45,7 @@ const AppRoute = () => {
             <Route path="/day8" element={<Day8/>}/>
             <Route path="/day9" element={<Day9/>}/>
             <Route path="/day10" element={<Day10/>}/>
+            <Route path="/day11" element={<Day11/>}/>
           </Route>
           <Route path="/" element={<Layouts/>}>
              <Route path="/obj" element={<ObjectArray/>}/>
