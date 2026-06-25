@@ -9,7 +9,7 @@ const RegisterForm = () => {
   }
 
   const handleNavigate = () => {
-    navigate("/dashboard");
+    navigate("/loginform");
   }
 
   const handleSubmit = (e) => {
@@ -31,7 +31,7 @@ const RegisterForm = () => {
     alert("Registration Successful");
 
     setUserData({UserName: "",UserEmail: "",UserPassword: "",})
-    navigate("/loginform")
+    navigate("/dashboard")
   }
 
   return (
