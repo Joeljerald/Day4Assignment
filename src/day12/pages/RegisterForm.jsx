@@ -9,7 +9,7 @@ const RegisterForm = () => {
   }
 
   const handleNavigate = () => {
-    navigate("/loginform");
+    navigate("/dashboard");
   }
 
   const handleSubmit = (e) => {
