@@ -22,6 +22,13 @@ import Day8 from "../pages/Day8"
 import Day9 from "../pages/Day9"
 import Day10 from "../pages/Day10"
 import Day11 from "../pages/Day11"
+import LoginForm from "../day12/pages/LoginForm"
+import RegisterForm from "../day12/pages/RegisterForm"
+import LayOut12 from "../day12/components/LayOut12"
+import Dashboard from "../day12/pages/Dashboard"
+import Day12 from "../pages/Day12"
+import HomePage from "../day12/pages/HomePage"
+
 
 
 const AppRoute = () => {
@@ -52,11 +59,20 @@ const AppRoute = () => {
           <Route path="/array" element={<Array/>}/>
           <Route path="/arrofobj" element={<ArrayOfObject/>}/>
           </Route>
+         <Route path="/" element={<LayOut12/>}>
+                     <Route path="/home" element={<HomePage/>}/>
+         
+         <Route path="/dashboard" element={<Dashboard/>}/>
+          </Route>
            
             <Route path="/login" element={<Login />} />
+            <Route path="/loginform" element={<LoginForm/>}/>
+            <Route path="/registerform" element={<RegisterForm/>}/>
+
             <Route path="/day2" element={<Day2/>}/>
             <Route path="/register" element={<Register/>}/>
             <Route path="/day7" element={<Day7/>}/>
+            <Route path="/day12" element={<Day12/>}/>
             
         </Routes>
     </div>
