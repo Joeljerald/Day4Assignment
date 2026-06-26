@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const auth = JSON.parse(localStorage.getItem("Auth"));
+  
+
   const navigate = useNavigate();
 
   if (!auth) {
@@ -12,6 +14,7 @@ const Dashboard = () => {
     )
   }
 
+ 
   const handleLogout = () => {
     localStorage.removeItem("Auth");
     navigate("/home");
@@ -40,6 +43,11 @@ const Dashboard = () => {
               <p className="text-gray-500">Email Address</p>
               <h3 className="text-xl font-semibold mt-2">{auth.UserEmail}</h3>
             </div>
+
+            
+            
+
+
 
             <div className="bg-slate-50 p-5 rounded-xl border">
               <p className="text-gray-500">Player ID</p>

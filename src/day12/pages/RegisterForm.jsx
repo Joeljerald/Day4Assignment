@@ -28,6 +28,8 @@ const RegisterForm = () => {
     }
     localStorageData.push(userData);
     localStorage.setItem( "userInput", JSON.stringify(localStorageData))
+    localStorage.setItem("Auth", JSON.stringify(userData));
+
     alert("Registration Successful");
 
     setUserData({UserName: "",UserEmail: "",UserPassword: "",})
