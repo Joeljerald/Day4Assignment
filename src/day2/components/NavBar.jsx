@@ -26,6 +26,7 @@ const NavBar=()=>{
             <button className="rounded-md " onClick={HandleRegister}><NavLink to="/" className={({ isActive }) =>`px-4 py-2 text-white rounded-md ${isActive ? "bg-blue-500":"bg-amber-500"}`}>Register</NavLink></button>
 
         </div>
-    </div>)    
+    </div>
+    )    
 }
 export default NavBar

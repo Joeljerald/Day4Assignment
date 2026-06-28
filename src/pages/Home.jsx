@@ -67,6 +67,11 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-rose-800 mb-4">Day 12</h2>
           <p className="text-gray-500">Day 12 - "Form Handling: controlled input, multi-field, error handling Event Handling, Controlled In </p>
         </Link>
+
+        <Link to="/specialtask" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+          <h2 className="text-3xl font-bold text-rose-800 mb-4">Special Task</h2>
+          <p className="text-gray-500">Test & Task</p>
+        </Link>
       </div>
     </div>
   );

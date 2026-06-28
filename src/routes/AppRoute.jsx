@@ -1,4 +1,4 @@
-import { Route ,Routes } from "react-router-dom"
+import { Route ,Routes , Navigate  } from "react-router-dom"
 import Day4 from "../pages/Day4"
 import Home  from "../pages/Home"
 import Day5 from "../pages/Day5"
@@ -28,6 +28,18 @@ import LayOut12 from "../day12/components/LayOut12"
 import Dashboard from "../day12/pages/Dashboard"
 import Day12 from "../pages/Day12"
 import HomePage from "../day12/pages/HomePage"
+import LayOutspl from "../specialtask/components/LayOutspl"
+import HomeSpl from "../specialtask/pages/HomeSpl"
+import BookManagement from "../specialtask/pages/BookManagement"
+import ContactBook from "../specialtask/pages/ContactBook"
+import CourseEnrollment from "../specialtask/pages/CourseEnrollment "
+import EmployeeManagement from "../specialtask/pages/EmployeeManagement"
+import JobApplicationPortal from "../specialtask/pages/JobApplicationPortal"
+import PatientRegistration from "../specialtask/pages/PatientRegistration"
+import StudentRegistration from "../specialtask/pages/StudentRegistration"
+import UserRegistration from "../specialtask/pages/UserRegistration"
+import VehicleRegistration from "../specialtask/pages/VehicleRegistration"
+import ProductSystem from "../specialtask/pages/ProductSystem"
 
 
 
@@ -36,14 +48,7 @@ const AppRoute = () => {
     <div>
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/" element={<Layout />}>
-          <Route path="/open" element={<Open />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
 
-         
-           
            <Route path="/day1" element={<Day1/>}/>
             <Route path="/day3" element={<Day3/>}/>
             <Route path="/day4" element={<Day4/>}/>
@@ -53,26 +58,54 @@ const AppRoute = () => {
             <Route path="/day9" element={<Day9/>}/>
             <Route path="/day10" element={<Day10/>}/>
             <Route path="/day11" element={<Day11/>}/>
+
+          <Route  element={<Layout/>}>
+          <Route path="/open" element={<Open/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/services" element={<Services/>} />
           </Route>
-          <Route path="/" element={<Layouts/>}>
-             <Route path="/obj" element={<ObjectArray/>}/>
+            
+          
+
+          <Route  element={<Layouts/>}>
+            <Route path="/obj" element={<ObjectArray/>}/>
           <Route path="/array" element={<Array/>}/>
           <Route path="/arrofobj" element={<ArrayOfObject/>}/>
           </Route>
-         <Route path="/" element={<LayOut12/>}>
-                     <Route path="/home" element={<HomePage/>}/>
+
+         <Route  element={<LayOut12/>}>
+          <Route path="/home" element={<HomePage/>}/>
          
          <Route path="/dashboard" element={<Dashboard/>}/>
           </Route>
+          
+          
+          <Route element={<LayOutspl/>}>
+          <Route path="/homespl" element={<HomeSpl/>}/>
+          <Route path="/book" element={<BookManagement/>}/>
+          <Route path="/contactbook" element={<ContactBook/>}/>
+          <Route path="/course" element={<CourseEnrollment/>}/>
+          <Route path="/employee" element={<EmployeeManagement/>}/>
+          <Route path="/job" element={<JobApplicationPortal/>}/>
+          <Route path="/patient" element={<PatientRegistration/>}/>
+          <Route path="/student" element={<StudentRegistration/>}/>
+          <Route path="/user"  element={<UserRegistration/>}/>
+          <Route path="/vechile" element={<VehicleRegistration/>}/>
+          <Route path="/product" element={<ProductSystem/>} />
+          </Route>
+
+          
            
             <Route path="/login" element={<Login />} />
             <Route path="/loginform" element={<LoginForm/>}/>
             <Route path="/registerform" element={<RegisterForm/>}/>
-
             <Route path="/day2" element={<Day2/>}/>
             <Route path="/register" element={<Register/>}/>
             <Route path="/day7" element={<Day7/>}/>
             <Route path="/day12" element={<Day12/>}/>
+            <Route path="/specialtask" element={<Navigate to="/homespl"  />}
+/>
             
         </Routes>
     </div>
