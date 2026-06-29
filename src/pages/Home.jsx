@@ -64,13 +64,18 @@ const Home = () => {
         </Link>
 
         <Link to="/day12" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
-          <h2 className="text-3xl font-bold text-rose-800 mb-4">Day 12</h2>
+          <h2 className="text-3xl font-bold text-rose-200 mb-4">Day 12</h2>
           <p className="text-gray-500">Day 12 - "Form Handling: controlled input, multi-field, error handling Event Handling, Controlled In </p>
         </Link>
 
         <Link to="/specialtask" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
-          <h2 className="text-3xl font-bold text-rose-800 mb-4">Special Task</h2>
-          <p className="text-gray-500">Test & Task</p>
+          <h2 className="text-3xl font-bold text-blue-950 mb-4">Special Task</h2>
+          <p className="text-gray-500">Test & Task to create a Form</p>
+        </Link>
+
+        <Link to="/day13" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+          <h2 className="text-3xl font-bold text-green-400 mb-4">Day13</h2>
+          <p className="text-gray-500">UseEffect</p>
         </Link>
       </div>
     </div>

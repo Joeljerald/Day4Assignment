@@ -68,6 +68,10 @@ const UserRegistration = () => {
             <input type="password" name="UserPassword" value={userData.UserPassword} onChange={handleEdit} placeholder="Create a password" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"/>
           </div>
 
+          <div className="md:col-span-2">
+              <button type="submit" className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-900 transition duration-300" >Register</button>
+            </div>
+
          
         </form>
          
