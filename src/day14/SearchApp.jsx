@@ -6,36 +6,36 @@ const SearchApp = () => {
     {
       id: 1,
       type: "Student",
-      name: "Sudhan",
+      name: "Godson",
       age: 20,
       course: "React Developer",
-      city: "Chennai",
+      city: "Tenkasi",
     },
     {
       id: 2,
       type: "Student",
-      name: "Sudhakar",
+      name: "Joel",
       age: 21,
       course: "MERN Stack",
-      city: "Madurai",
+      city: "Ramanathapuram",
     },
     {
       id: 3,
       type: "Student",
-      name: "Joel",
+      name: "Darvin",
       age: 22,
       course: "Java Developer",
-      city: "Salem",
+      city: "Trichy",
     },
     {
       id: 4,
       type: "Student",
-      name: "Arun",
+      name: "Hakim",
       age: 23,
       course: "Python Developer",
-      city: "Coimbatore",
+      city: "Paramakudi",
     },
-  ];
+  ]
 
 
   const products = [
@@ -49,7 +49,7 @@ const SearchApp = () => {
     {
       id: 6,
       type: "Product",
-      name: "Laptop Stand",
+      name: "Laptop Charger",
       brand: "HP",
       price: "₹1,200",
     },
@@ -73,28 +73,28 @@ const SearchApp = () => {
     {
       id: 9,
       type: "Employee",
-      name: "Ravi",
+      name: "Jerald",
       department: "HR",
       salary: "₹35,000",
     },
     {
       id: 10,
       type: "Employee",
-      name: "Ramesh",
+      name: "Jamie Theresa",
       department: "Developer",
       salary: "₹60,000",
     },
     {
       id: 11,
       type: "Employee",
-      name: "Priya",
+      name: "Amalan",
       department: "Designer",
       salary: "₹50,000",
     },
     {
       id: 12,
       type: "Employee",
-      name: "Arun",
+      name: "SivaDenny NirmalSarath",
       department: "Tester",
       salary: "₹45,000",
     },
@@ -113,21 +113,21 @@ const SearchApp = () => {
       type: "Course",
       name: "React Native",
       duration: "4 Months",
-      trainer: "Ajay",
+      trainer: "Arulsamy",
     },
     {
       id: 15,
       type: "Course",
       name: "Python",
       duration: "3 Months",
-      trainer: "Hari",
+      trainer: "Sharmila",
     },
     {
       id: 16,
       type: "Course",
       name: "Java",
       duration: "5 Months",
-      trainer: "Kumar",
+      trainer: "janish",
     },
   ];
 
@@ -252,7 +252,7 @@ const SearchApp = () => {
           ))}
           {filteredData.length === 0 && (
             <div className="col-span-full flex justify-center items-center py-20">
-              <div className="bg-white border border-gray-200 rounded-2xl shadow-md p-10 w-full max-w-md text-center">
+              <div className="bg-white border border-gray-200 rounded-2xl shadow-md p-10 w-full ma  x-w-md text-center">
                 <div className="text-6xl mb-5">🔍</div>
                 <h2 className="text-3xl font-bold text-gray-800">No Results Found</h2>
                 <p className="text-gray-500 mt-3">No matching results for</p>
