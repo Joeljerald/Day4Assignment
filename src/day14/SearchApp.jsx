@@ -246,7 +246,7 @@ const SearchApp = () => {
                   </>
                 )}
 
-                <button className="mt-8 w-full bg-slate-900 text-white py-3 rounded-xl hover:bg-slate-800 transition">View Details\</button>
+                <button className="mt-8 w-full bg-slate-900 text-white py-3 rounded-xl hover:bg-slate-800 transition">View Details</button>
               </div>
             </div>
           ))}
