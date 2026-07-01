@@ -77,6 +77,11 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-green-400 mb-4">Day13</h2>
           <p className="text-gray-500">UseEffect</p>
         </Link>
+
+         <Link to="/day14" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+          <h2 className="text-3xl font-bold text-cyan-500 mb-4">Day14</h2>
+          <p className="text-gray-500">Search and select category</p>
+        </Link>
       </div>
     </div>
   );

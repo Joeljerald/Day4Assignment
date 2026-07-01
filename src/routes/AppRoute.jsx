@@ -41,6 +41,7 @@ import UserRegistration from "../specialtask/pages/UserRegistration"
 import VehicleRegistration from "../specialtask/pages/VehicleRegistration"
 import ProductSystem from "../specialtask/pages/ProductSystem"
 import Day13 from "../pages/Day13"
+import Day14 from "../pages/Day14"
 
 
 
@@ -60,6 +61,7 @@ const AppRoute = () => {
             <Route path="/day10" element={<Day10/>}/>
             <Route path="/day11" element={<Day11/>}/>
             <Route path="/day13" element={<Day13/>}/>
+            <Route path="/day14" element={<Day14/>}/>
 
           <Route  element={<Layout/>}>
           <Route path="/open" element={<Open/>} />
