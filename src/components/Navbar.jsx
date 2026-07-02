@@ -29,7 +29,7 @@ const Companyname=()=>{
 const Menu=()=>{
     return(<>
     <div className="flex gap-10  mx-8 mt-5">
-        <Link to="./" className="text-white bg-black w-25 h-10 rounded-2xl py-1.5 px-4">DashBoard </Link>
+        <Link to={"/"} className="text-white bg-black w-25 h-10 rounded-2xl py-1.5 px-4">DashBoard </Link>
         
         </div></>)
 

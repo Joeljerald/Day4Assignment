@@ -82,6 +82,11 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-cyan-500 mb-4">Day14</h2>
           <p className="text-gray-500">Search and select category</p>
         </Link>
+
+        <Link to="/day15" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+          <h2 className="text-3xl font-bold text-fuchsia-400 mb-4">Day15</h2>
+          <p className="text-gray-500"> Filter by Sort, Search, Category</p>
+        </Link>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar"
 import AuthMain from "../day9/day9Main/AuthMain"
 import CountMain from "../day9/day9Main/CountMain"
 import LoadingMain from "../day9/day9Main/LoadingMain"
@@ -7,6 +8,8 @@ import UserMain from "../day9/day9Main/UserMain"
 
 const Day9 = () => {
   return (
+    <>
+    <Navbar/>
     <div className="bg-blue-500">
     <h1 className=" p-3 hover:scale-105 transition duration-300"><LoadingMain/></h1>
     <h1 className=" p-3 m-50 hover:scale-105 transition duration-300"><UserMain/></h1>
@@ -16,6 +19,7 @@ const Day9 = () => {
     <h1 className=" p-3 m-auto hover:scale-105 transition duration-300"><NumberMain/></h1>
     
     </div>
+    </>
   )
 }
 

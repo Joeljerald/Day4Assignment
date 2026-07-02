@@ -6,6 +6,7 @@ import User from "../day3/User";
 import Company from "../day3/Company";
 import Parent from "../day3/Parent";
 import CourseCard from "../day3/CourseCard";
+import Navbar from "../components/Navbar";
 
 const Day3 = () => {
   const name = "Joel";
@@ -31,7 +32,8 @@ const Day3 = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <h1 className="text-5xl font-bold text-center py-8 bg-amber-400 shadow-md">DAY 3 TASKS</h1>
+      <Navbar/>
+
       <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <Student name={name} age={age} course={course} city={city}/>
 

@@ -132,21 +132,14 @@ const SearchApp = () => {
   ];
 
 
-  const allData = [
-    ...students,
-    ...products,
-    ...employees,
-    ...courses,
-  ];
+  const allData = [ ...students,...products,...employees,...courses,]
 
   const [category, setCategory] = useState("All");
   const [search, setSearch] = useState("");
 
   const categoryData =category === "All"? allData: allData.filter((i) => i.type === category);
 
-  const filteredData = categoryData.filter((i) =>
-    i.name.toLowerCase().includes(search.toLowerCase())
-  )
+  const filteredData = categoryData.filter((i) =>i.name.toLowerCase().includes(search.toLowerCase()))
 
   return (
     <div className="min-h-screen bg-gray-100 py-10">
@@ -155,13 +148,10 @@ const SearchApp = () => {
 
         <div className="bg-white rounded-3xl shadow-lg border border-gray-200 p-10">
 
-          <h1 className="text-5xl font-extrabold text-center text-gray-900">
-             Searching and Category
-          </h1>
+          <h1 className="text-5xl font-extrabold text-center text-gray-900">Searching and Category</h1>
 
           <p className="text-center text-gray-500 mt-4 text-lg">
             Search Students, Products, Employees and Courses
-            from one place.
           </p>
 
 

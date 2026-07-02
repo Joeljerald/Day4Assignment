@@ -4,10 +4,12 @@ import Count from "../day5/Count";
 import ArrayOfObject from "../day5/ArrayOfObject";
 import UserObject from "../day5/UserObject";
 import SyntaxUsestate from "../day5/SyntaxUsestate";
+import Navbar from "../components/Navbar";
 
 const Day5 = () => {
   return (
     <div className="grid grid-cols-1">
+      <Navbar/>
     <ClassComponent/>
     <Lifecycle/>
     <SyntaxUsestate/>

@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar"
 import EmployeeDetails from "../day11/EmployeeDetails"
 import ProductManagement from "../day11/ProductManagement"
 import SchoolManagement from "../day11/SchoolManagement"
@@ -7,6 +8,7 @@ import UserProfile from "../day11/UserProfile"
 const Day11 = () => {
   return (
     <>
+    <Navbar/>
     <EmployeeDetails/>
     <StudentRegistrationForm/>
     <ProductManagement/>

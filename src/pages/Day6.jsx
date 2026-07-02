@@ -13,11 +13,14 @@ import ShowHide from "../Day6/ShowHide"
 import ThemeChange from "../Day6/ThemeChange"
 import UpdateNumber from "../Day6/UpdateNumber"
 import UserData from "../Day6/UserData"
+import Navbar from "../components/Navbar"
 
 const Day6 = () => {
   return (
     <>
+      <Navbar/>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-4">
+    
     <Age/>
     <AttandaceTracker/>
     <BankBalance/>
