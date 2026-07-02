@@ -95,6 +95,13 @@ const Filter = () => {
         </select>
 
         <input type="text" placeholder="Search Product..." onChange={handleSearch} className="border border-gray-300 rounded-md px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+    <div className="ml-20">
+    <h2 className="text-3xl font-bold text-gray-900">{storeData.length} Products</h2>
+    <p className="text-gray-500">
+    Showing {storeData.length} of {getProduct.length} Results
+    </p>
+    </div>
+   
       </div>
 
       {loading ? (
