@@ -43,6 +43,7 @@ import ProductSystem from "../specialtask/pages/ProductSystem"
 import Day13 from "../pages/Day13"
 import Day14 from "../pages/Day14"
 import Day15 from "../pages/Day15"
+import Day16 from "../pages/Day16"
 
 
 
@@ -63,6 +64,7 @@ const AppRoute = () => {
             <Route path="/day13" element={<Day13/>}/>
             <Route path="/day14" element={<Day14/>}/>
             <Route path="/day15" element={<Day15/>}/>
+            <Route path="/day16" element={<Day16/>}/>
 
           <Route  element={<Layout/>}>
           <Route path="/open" element={<Open/>} />
