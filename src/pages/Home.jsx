@@ -89,8 +89,13 @@ const Home = () => {
         </Link>
 
         <Link to="/day16" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
-          <h2 className="text-3xl font-bold text-fuchsia-400 mb-4">Day16</h2>
+          <h2 className="text-3xl font-bold text-gray-600 mb-4">Day16</h2>
           <p className="text-gray-500"> Todo & Fetch Data_1</p>
+        </Link>
+
+         <Link to="/day16" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+          <h2 className="text-3xl font-bold text-indigo-950 mb-4">Day17</h2>
+          <p className="text-gray-500">Day 17 - useRef, controlling focus, refs for values, useImperativeHandle</p>
         </Link>
       </div>
     </div>
