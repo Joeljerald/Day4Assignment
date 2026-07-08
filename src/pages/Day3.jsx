@@ -7,6 +7,7 @@ import Company from "../day3/Company";
 import Parent from "../day3/Parent";
 import CourseCard from "../day3/CourseCard";
 import Navbar from "../components/Navbar";
+import PageLayout from "../PageLayout"
 
 const Day3 = () => {
   const name = "Joel";
@@ -32,6 +33,7 @@ const Day3 = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
+      <PageLayout>
       <Navbar/>
 
       <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -56,8 +58,10 @@ const Day3 = () => {
         <CourseCard courseName="Python" duration="5 Months" fees={60000}/>
 
       </div>
+      </PageLayout>
 
     </div>
+    
   );
 };
 

@@ -6,9 +6,12 @@ import MovieDetails from "../day1/MovieDetails";
 import CompanyInfo from "../day1/CompanyInfo";
 import Footer from "../day1/Footer";
 import Navbar from "../components/Navbar"
+import PageLayout from "../PageLayout"
 
 const App=()=>{
-  return(<>
+  return(
+  <>
+  <PageLayout>
     <div>
       <Navbar/>
     
@@ -19,6 +22,7 @@ const App=()=>{
     <CompanyInfo/>
     <Footer/>
     </div>
+    </PageLayout>
     </>)
 }
 export default App;

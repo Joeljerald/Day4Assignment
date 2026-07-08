@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import SchoolCart from "../day4/components/SchoolCart";
 import Schools from "../day4/components/Schools";
 import SchoolStats from "../day4/components/SchoolStats";
+import PageLayout from "../PageLayout"
 const schools = [
 
   {
@@ -170,12 +171,14 @@ const schools = [
 const Day4 = () => {
   return (
     <>
+    <PageLayout>
     <Navbar/>
     <div className="bg-green-200 ">
       <Schools schools={schools}/>
       <SchoolStats schools={schools}/>
       <SchoolCart schools={schools}/>
     </div>
+    </PageLayout>
 
     </>
   )

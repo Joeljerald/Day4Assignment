@@ -5,10 +5,13 @@ import DynamicPageTitle from "../day13/DynamicPageTitle"
 import PageLoad from "../day13/PageLoad"
 import Timer from "../day13/Timer"
 import UserDataFetch from "../day13/UserDataFetch"
+import PageLayout from "../PageLayout"
+
 
 const Day13 = () => {
   return (
     <>
+    <PageLayout>
     <Navbar/>
     <div className="min-h-screen bg-slate-100 py-6 px-4">
       
@@ -21,6 +24,7 @@ const Day13 = () => {
         <PageLoad />
       </div>
     </div>
+    </PageLayout>
     </>
   )
 }

@@ -5,10 +5,13 @@ import ArrayOfObject from "../day5/ArrayOfObject";
 import UserObject from "../day5/UserObject";
 import SyntaxUsestate from "../day5/SyntaxUsestate";
 import Navbar from "../components/Navbar";
+import PageLayout from "../PageLayout"
 
 const Day5 = () => {
   return (
+    
     <div className="grid grid-cols-1">
+      <PageLayout>
       <Navbar/>
     <ClassComponent/>
     <Lifecycle/>
@@ -16,6 +19,7 @@ const Day5 = () => {
     <Count/>
     <UserObject/>
     <ArrayOfObject/>
+    </PageLayout>
 
     </div>
   )

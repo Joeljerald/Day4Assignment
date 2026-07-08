@@ -14,10 +14,12 @@ import ThemeChange from "../Day6/ThemeChange"
 import UpdateNumber from "../Day6/UpdateNumber"
 import UserData from "../Day6/UserData"
 import Navbar from "../components/Navbar"
+import PageLayout from "../PageLayout"
 
 const Day6 = () => {
   return (
     <>
+    <PageLayout>
       <Navbar/>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-4">
     
@@ -37,6 +39,7 @@ const Day6 = () => {
     <UpdateNumber/>
     <UserData/>
     </div>
+    </PageLayout>
     </>
   )
 }

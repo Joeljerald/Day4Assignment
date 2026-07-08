@@ -4,16 +4,19 @@ import ProductManagement from "../day11/ProductManagement"
 import SchoolManagement from "../day11/SchoolManagement"
 import StudentRegistrationForm from "../day11/StudentRegistrationForm"
 import UserProfile from "../day11/UserProfile"
+import PageLayout from "../PageLayout"
 
 const Day11 = () => {
   return (
     <>
+    <PageLayout>
     <Navbar/>
     <EmployeeDetails/>
     <StudentRegistrationForm/>
     <ProductManagement/>
     <UserProfile/>
     <SchoolManagement/>
+    </PageLayout>
     </>
   )
 }

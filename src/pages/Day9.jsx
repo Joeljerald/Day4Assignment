@@ -5,10 +5,12 @@ import LoadingMain from "../day9/day9Main/LoadingMain"
 import NumberMain from "../day9/day9Main/NumberMain"
 import UpperMain from "../day9/day9Main/UpperMain"
 import UserMain from "../day9/day9Main/UserMain"
+import PageLayout from "../PageLayout"
 
 const Day9 = () => {
   return (
     <>
+    <PageLayout>
     <Navbar/>
     <div className="bg-blue-500">
     <h1 className=" p-3 hover:scale-105 transition duration-300"><LoadingMain/></h1>
@@ -19,6 +21,7 @@ const Day9 = () => {
     <h1 className=" p-3 m-auto hover:scale-105 transition duration-300"><NumberMain/></h1>
     
     </div>
+    </PageLayout>
     </>
   )
 }

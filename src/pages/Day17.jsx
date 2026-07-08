@@ -3,10 +3,14 @@ import InputDisplay from "../day17/InputDisplay"
 import ScrollSPA from "../day17/ScrollSPA"
 import Toggle from "../day17/Toggle"
 import Navbar from "../components/Navbar"
+import PageLayout from "../PageLayout"
+
 
 const Day17 = () => {
   return (
     <>
+    
+  <PageLayout>
     <Navbar/>
     <div className="min-h-screen bg-slate-100 py-10">
       
@@ -20,6 +24,9 @@ const Day17 = () => {
         </div>
       </div>
     </div>
+
+    </PageLayout>
+    
     </>
   );
 }
