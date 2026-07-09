@@ -132,7 +132,7 @@ const AppRoute = () => {
             <Route path="/register" element={<Register/>}/>
             <Route path="/day7" element={<Day7/>}/>
             <Route path="/day12" element={<Day12/>}/>
-            <Route path="/specialtask" element={<Navigate to="/homespl"  />}/>
+            <Route path="/specialtask" element={<Navigate to="/homespl"/>}/>
             <Route path="/login19" element={<Login19/>}/>
             <Route path="/register19" element={<Register19/>}/>
             <Route path="/day19" element={<Day19/>}/>
