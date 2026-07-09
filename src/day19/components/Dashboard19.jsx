@@ -2,7 +2,7 @@ import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
-const Dashboard = () => {
+const Dashboard19 = () => {
   const nav = useNavigate();
   const { user, logout } = useContext(AuthContext);
 
@@ -15,7 +15,7 @@ const Dashboard = () => {
       <div className="max-w-6xl mx-auto">
         <div className="bg-green-800 text-white rounded-2xl shadow-lg p-10">
           <h1 className="text-4xl font-bold">
-            Welcome, {user?.UserName}! 👋
+            Welcome, {user?.UserName}! 
           </h1>
           <p className="mt-3 text-lg text-green-100">
             Continue your cricket journey with Elite Cricket Academy.
@@ -132,4 +132,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Dashboard19;

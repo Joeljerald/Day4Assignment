@@ -32,7 +32,7 @@ import LayOutspl from "../specialtask/components/LayOutspl"
 import HomeSpl from "../specialtask/pages/HomeSpl"
 import BookManagement from "../specialtask/pages/BookManagement"
 import ContactBook from "../specialtask/pages/ContactBook"
-import CourseEnrollment from "../specialtask/pages/CourseEnrollment "
+import CourseEnrollment from "../specialtask/pages/CourseEnrollment"
 import EmployeeManagement from "../specialtask/pages/EmployeeManagement"
 import JobApplicationPortal from "../specialtask/pages/JobApplicationPortal"
 import PatientRegistration from "../specialtask/pages/PatientRegistration"
@@ -49,7 +49,7 @@ import Day18 from "../pages/Day18"
 import Register19 from "../day19/components/Register19"
 import Login19 from "../day19/components/Login19"
 import Day19 from "../pages/Day19"
-import Layout19 from "../day19/pages/layout19"
+import Layout19 from "../day19/pages/Layout19"
 import Dashboard19 from "../day19/components/Dashboard19"
 import HomePage19 from "../day19/components/HomePage19"
 import Settings from "../day19/components/Settings"
@@ -103,7 +103,7 @@ const AppRoute = () => {
           <Route path="/home" element={<ProductedRouters><HomePage19/></ProductedRouters>}/>
          
          <Route path="/dash" element={<ProductedRouters><Dashboard19/></ProductedRouters>}/>
-         <Route path="/settings" element={<Settings/>}/>
+         <Route path="/settings" element={<ProductedRouters><Settings/></ProductedRouters>}/>
           </Route>
           
           
