@@ -46,6 +46,14 @@ import Day15 from "../pages/Day15"
 import Day16 from "../pages/Day16"
 import Day17 from "../pages/Day17"
 import Day18 from "../pages/Day18"
+import Register19 from "../day19/components/Register19"
+import Login19 from "../day19/components/Login19"
+import Day19 from "../pages/Day19"
+import Layout19 from "../day19/pages/layout19"
+import Dashboard19 from "../day19/components/Dashboard19"
+import HomePage19 from "../day19/components/HomePage19"
+import Settings from "../day19/components/Settings"
+import ProductedRouters from "../day19/routes/ProductedRouters"
 
 
 
@@ -90,6 +98,13 @@ const AppRoute = () => {
          
          <Route path="/dashboard" element={<Dashboard/>}/>
           </Route>
+
+            <Route  element={<Layout19/>}>
+          <Route path="/home" element={<ProductedRouters><HomePage19/></ProductedRouters>}/>
+         
+         <Route path="/dash" element={<ProductedRouters><Dashboard19/></ProductedRouters>}/>
+         <Route path="/settings" element={<Settings/>}/>
+          </Route>
           
           
           <Route element={<LayOutspl/>}>
@@ -106,6 +121,8 @@ const AppRoute = () => {
           <Route path="/product" element={<ProductSystem/>} />
           </Route>
 
+
+
           
            
             <Route path="/login" element={<Login />} />
@@ -115,8 +132,11 @@ const AppRoute = () => {
             <Route path="/register" element={<Register/>}/>
             <Route path="/day7" element={<Day7/>}/>
             <Route path="/day12" element={<Day12/>}/>
-            <Route path="/specialtask" element={<Navigate to="/homespl"  />}
-/>
+            <Route path="/specialtask" element={<Navigate to="/homespl"  />}/>
+            <Route path="/login19" element={<Login19/>}/>
+            <Route path="/register19" element={<Register19/>}/>
+            <Route path="/day19" element={<Day19/>}/>
+
             
         </Routes>
     </div>

@@ -8,6 +8,7 @@ import ThemeProvider from "./day18/provider/ThemeProvider.jsx";
 import StudentProvider from "./day18/provider/StudentProvider.jsx";
 import ShoppingProvider from "./day18/provider/ShoppingProvider.jsx";
 import DashboardProvider from "./day18/provider/DashboardProvider.jsx";
+import { AuthProvider } from "./day19/context/AuthContext.jsx";
 
 if ("scrollRestoration" in window.history) {
   window.history.scrollRestoration = "manual";
@@ -21,7 +22,10 @@ createRoot(document.getElementById("root")).render(
         <StudentProvider>
           <ShoppingProvider>
             <DashboardProvider>
+              <AuthProvider>
                 <App />
+              </AuthProvider>
+                
             </DashboardProvider>
           </ShoppingProvider>
         </StudentProvider>
