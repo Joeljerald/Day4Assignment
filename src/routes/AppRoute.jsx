@@ -54,6 +54,7 @@ import Dashboard19 from "../day19/components/Dashboard19"
 import HomePage19 from "../day19/components/HomePage19"
 import Settings from "../day19/components/Settings"
 import ProductedRouters from "../day19/routes/ProductedRouters"
+import Day20 from "../pages/Day20"
 
 
 
@@ -77,6 +78,7 @@ const AppRoute = () => {
             <Route path="/day16" element={<Day16/>}/>
             <Route path="/day17" element={<Day17/>}/>
             <Route path="/day18" element={<Day18/>}/>
+            <Route path="/day20" element={<Day20/>}/>
 
           <Route  element={<Layout/>}>
           <Route path="/open" element={<Open/>} />
