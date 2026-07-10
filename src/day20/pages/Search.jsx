@@ -22,7 +22,10 @@ const Search = () => {
 
         <div className="flex justify-center mb-8">
           <input type="text" placeholder="Search Student..." onChange={handleChange} className="w-full max-w-md border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+         
         </div>
+
+        
 
         {search.length > 0 ? (
           <div className="overflow-x-auto">

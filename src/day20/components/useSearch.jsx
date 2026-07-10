@@ -28,12 +28,24 @@ const useSearch = (url) => {
       },[url])
 
 
-      const handleChange=(e)=>{
-        const filteredData=studentData.filter((e)=>e.firstName.toLowerCase().includes(e.target.value.toLowerCase()) || e.maidenName.toLowerCase().includes(e.target.value.toLowerCase()) ||e.lastName.toLowerCase().includes(e.target.value.toLowerCase()) )
+      const handleChange = (e) => {
+  const value = e.target.value.toLowerCase().trim();
 
-        setSearch(filteredData)
-      }
+  if (value === "") {
+    setSearch(studentData);
+    return;
+  }
 
+  const filteredData = studentData.filter((student) => {
+    return (
+      student.firstName.toLowerCase().includes(value) ||
+      student.lastName.toLowerCase().includes(value) ||
+      student.maidenName.toLowerCase().includes(value)
+    )
+  })
+
+  setSearch(filteredData);
+}
       return{studentData,search,error,loading,handleChange}
     
 
