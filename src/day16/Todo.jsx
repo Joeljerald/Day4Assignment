@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Todo() {
 const [userName, setUserName] = useState("");
 const [mobile, setMobile] = useState("");
-const [email, setEmail] = useState("")
+const [email, setEmail] = useState("");
 const [todos, setTodos] = useState(() => {
   return JSON.parse(localStorage.getItem("todos")) || []
 })

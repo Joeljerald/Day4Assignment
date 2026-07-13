@@ -118,6 +118,11 @@ const Home = () => {
           <p className="text-gray-500">Day 20 - Custom Hooks, refactor logic, share state or functions</p>
         </Link>
 
+        <Link to="/day21" className="bg-white w-72 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+          <h2 className="text-3xl font-bold text-emerald-700 mb-4">Day21</h2>
+          <p className="text-gray-500">Day 21 - UseMemo </p>
+        </Link>
+
       </div>
     </div>
     </PageLayout>
