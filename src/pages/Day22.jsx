@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 import SearchMemoProccess from "../day22/SearchMemoProccess"
-import UsecallbackOperation from "../day22/usecallbackOperation"
+import UsecallbackOperation from "../day22/UsecallbackOperation"
 import PageLayout from "../PageLayout"
 
 
