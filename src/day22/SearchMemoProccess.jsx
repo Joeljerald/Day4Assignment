@@ -16,11 +16,21 @@ const SearchMemoProccess = () => {
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState("");
   const [theme, setTheme] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
-    const response = await fetch("https://dummyjson.com/products");
+    try{
+        const response = await fetch("https://dummyjson.com/products");
     const data = await response.json();
     setCollection(data.products);
+    }
+    catch(err){
+        console.log(err.message())
+    }
+    finally {
+        setLoading(false);
+      }
+    
   }
 
   useEffect(() => {
@@ -64,7 +74,10 @@ const SearchMemoProccess = () => {
             </select>
           </div>
         </div>
-
+        {loading ? (
+        <div className="flex justify-center items-center h-64">
+        <h1 className="text-3xl font-bold text-blue-600">Loading...</h1>
+        </div>):(
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {datas.map((e) => (
             <div key={e.id} className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 border-l-4 border-indigo-600">
@@ -98,6 +111,7 @@ const SearchMemoProccess = () => {
             </div>
           ))}
         </div>
+        )}
       </div>
     </div>
   )
