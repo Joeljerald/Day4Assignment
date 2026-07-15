@@ -57,6 +57,7 @@ import ProductedRouters from "../day19/routes/ProductedRouters"
 import Day20 from "../pages/Day20"
 import Day21 from "../pages/Day21"
 import Day22 from "../pages/Day22"
+import Day23 from "../pages/Day23"
 
 
 
@@ -83,6 +84,7 @@ const AppRoute = () => {
             <Route path="/day20" element={<Day20/>}/>
             <Route path="/day21" element={<Day21/>}/>
             <Route path="/day22" element={<Day22/>}/>
+            <Route path="/day23" element={<Day23/>}/>
 
           <Route  element={<Layout/>}>
           <Route path="/open" element={<Open/>} />
