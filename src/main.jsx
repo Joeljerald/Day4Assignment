@@ -1,4 +1,5 @@
 import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
@@ -14,7 +15,7 @@ if ("scrollRestoration" in window.history) {
   window.history.scrollRestoration = "manual";
 }
 
-createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
   <ProfileProvider>
     <ProductProvider>

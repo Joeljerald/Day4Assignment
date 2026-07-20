@@ -58,6 +58,13 @@ import Day20 from "../pages/Day20"
 import Day21 from "../pages/Day21"
 import Day22 from "../pages/Day22"
 import Day23 from "../pages/Day23"
+import Day24 from "../pages/Day24"
+import LayOut24 from "../day24/components/Layout24"
+import Home24 from "../day24/pages/Home24"
+import About24 from "../day24/pages/About24"
+import Products24 from "../day24/pages/Products24"
+import { Suspense } from "react"
+import Loader from "../day24/components/Loader"
 
 
 
@@ -86,11 +93,20 @@ const AppRoute = () => {
             <Route path="/day22" element={<Day22/>}/>
             <Route path="/day23" element={<Day23/>}/>
 
+            
+
           <Route  element={<Layout/>}>
           <Route path="/open" element={<Open/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/services" element={<Services/>} />
+          </Route>
+
+          
+          <Route element={<LayOut24/>}>
+          <Route path="/home24" element={<Home24/>}/>
+          <Route path="/about24" element={<Suspense fallback={<Loader/>}><About24/></Suspense>}/>
+          <Route path="/products24" element={<Suspense fallback={<Loader/>}><Products24/></Suspense>}/>
           </Route>
             
           
@@ -144,6 +160,7 @@ const AppRoute = () => {
             <Route path="/login19" element={<Login19/>}/>
             <Route path="/register19" element={<Register19/>}/>
             <Route path="/day19" element={<Day19/>}/>
+            <Route path="/day24" element={<Day24/>}/>
 
             
         </Routes>
